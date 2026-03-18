@@ -46,7 +46,7 @@ public class CartController {
                     int id=sc.nextInt();
                     try{
                         cartService.delete(id);
-                        System.out.println("Ticket deleted");
+                        System.out.println("Item deleted");
                     }catch(ItemNotFoundException e){
                         System.out.println(e.getMessage());
                     }
